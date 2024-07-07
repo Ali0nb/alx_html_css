@@ -1,5 +1,24 @@
 /* Apply Flexbox to the body and main containers */
 body {
+    
+    
+    .works_on_smartphone main {
+        flex-direction: column; }
+    
+    @media (max-width: 768px) {
+        body.works_on_smartphone {
+            flex-direction: column;
+        }
+    
+        main {
+            flex-direction: column;
+        }
+    
+        article, aside {
+            flex: 1; /* Make article and aside take equal space when stacked */
+        }
+    }
+    
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full viewport height to allow flex layout */
