@@ -1,0 +1,42 @@
+/* Apply Flexbox to the body and main containers */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height to allow flex layout */
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Allow main to grow and fill available space */
+}
+
+/* Set flex properties for article and aside */
+article {
+    flex: 2;
+    overflow-y: auto; /* Allow scrolling within the article */
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto; /* Allow scrolling within the aside */
+}
+
+/* Basic styling for header and footer */
+header, footer {
+    background-color: #f8f8f8;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Optional: Basic styling for article and aside */
+article {
+    padding: 1em;
+    background-color: #ffffff;
+}
+
+aside {
+    padding: 1em;
+    background-color: #f0f0f0;
+}
